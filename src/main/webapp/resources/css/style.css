@@ -1,1 +1,9 @@
-// style.css - Placeholder content
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  color: #333;
+}
+table, th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
