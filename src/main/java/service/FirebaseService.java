@@ -1,0 +1,1 @@
+// FirebaseService.java - Placeholder content
