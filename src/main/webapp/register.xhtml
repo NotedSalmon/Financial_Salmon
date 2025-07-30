@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:h="http://xmlns.jcp.org/jsf/html">
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
 <h:head>
     <title>Register - FinancialSalmon</title>
 </h:head>
 <h:body>
 <h:form>
     <h1>Register</h1>
-    <h:inputText value="#{budgetController.email}" placeholder="Email"/>
-    <h:inputSecret value="#{budgetController.password}" placeholder="Password"/>
-    <h:commandButton value="Register" action="#{budgetController.register}"/>
+    <h:inputText value="#{authenticationBean.name}" placeholder="Name"/>
+    <h:inputText value="#{authenticationBean.username}" placeholder="Username"/>
+    <h:inputText value="#{authenticationBean.email}" placeholder="Email"/>
+    <h:inputSecret value="#{authenticationBean.password}" placeholder="Password"/>
+    <h:commandButton value="Register" action="#{authenticationBean.register}"/>
 </h:form>
 </h:body>
 </html>
